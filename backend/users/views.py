@@ -39,7 +39,7 @@ def register(request):
         serializer = UserSerializerWithToken(user, many=False)
         return Response(serializer.data)
     except:
-        message = {'detail': 'Somthing went wrong'}
+        message = {'detail': 'Ups! algo salio mal'}
         return Response(message, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['PUT'])
