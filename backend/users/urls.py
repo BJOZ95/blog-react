@@ -10,4 +10,5 @@ urlpatterns = [
     path('userProfile/', views.getUserProfile),
     path('<int:pk>/', views.getSoloUser),
     path('getUsers/', views.getUsers),
+    
 ]
